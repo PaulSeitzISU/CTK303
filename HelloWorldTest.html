@@ -17,6 +17,7 @@
             padding: 20px;
             display: grid;
             grid-template-columns: 1fr;
+            grid-template-areas: "left" "right";
             grid-gap: 20px;
             text-align: center;
         }
@@ -50,19 +51,19 @@
 </head>
 <body>
     <div class="container">
-        <div class="box">
+        <div class="box" style="grid-area: left;">
             <h2 class="box-title">Famous Song Released on September 8th</h2>
             <div class="box-content">
                 One of the most iconic songs ever created is "Imagine" by John Lennon. While it wasn't released on September 8th, let's take a moment to appreciate its beauty.
             </div>
         </div>
-        <div class="box">
+        <div class="box" style="grid-area: right;">
             <h2 class="box-title">About "Imagine"</h2>
             <div class="box-content">
                 "Imagine" is a song that envisions a world of peace and unity. Its powerful lyrics and simple melody have made it a timeless anthem. Although not released on September 8th, "Imagine" continues to inspire and touch hearts around the world.
             </div>
         </div>
-        <div class="box">
+        <div class="box" style="grid-area: left;">
             <h2 class="box-title">Listen to "Imagine"</h2>
             <div class="box-content video-container">
                 <iframe class="video-embed" width="560" height="315" src="https://www.youtube.com/embed/yRhq-yO1KN8" frameborder="0" allowfullscreen></iframe>
