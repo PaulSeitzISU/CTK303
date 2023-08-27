@@ -14,6 +14,37 @@ ul {
     background-color: #f2f2f2;
     padding: 00px;
 }
+h1 {
+    padding: 15px;
+
+}
+.grid {
+    grid-column: span 12;
+}
+
+.leftAlign {
+    grid-column: 5 / span 12;
+}
+
+.bouncing-title {
+    animation: bounce 2s infinite;
+    
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(0,0);
+    }
+    25% {
+        transform: translate(+10px,-10px)
+    }
+    50% {
+        transform: translate(+0px,-20px)
+    }
+    75%{
+        transform: translate(-10px,-10px)
+    }
+}
 
 /* Style list items */
 .horizontal-list li {
