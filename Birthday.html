@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Simple Website</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1></h1>
         <nav>
             <ul class="horizontal-list">
                 <li><a href="#">Home</a></li>
@@ -20,31 +19,27 @@
         </nav>
     </header>
 
-    <section>
-        <h2 id="scraped-h2"></h2>
-        <h3 id="scraped-h3"></h3>
-    </section>
-    
-    <!-- Add the date selector -->
-    <section>
-        <label for="date-selector">Select Date: </label>
-        <input type="date" id="date-selector">
-        <button id="fetch-button">Fetch Data</button>
-    </section>
-
     <main>
         <section>
-            <h2>About Us</h2>
+            <h2>Info</h2>
             <p>This is a simple website created using HTML.</p>
         </section>
 
         <section>
-            <h2>Services</h2>
+            <h2>Music</h2>
             <ul>
-                <li>Web Design</li>
-                <li>Graphic Design</li>
+                <li>Enrique Iglesias - Bailamos</li>
+                <li>June 29, 1999</li>
+                <li>A captivating and rhythmic pop song by Enrique Iglesias that effortlessly combines Latin flair with contemporary pop sensibilities. With its infectious melody and vibrant instrumentation, the track invites listeners to sway and dance along. Iglesias's emotive vocals add a layer of passion, making "Bailamos" an irresistible anthem of romance and celebration, capturing the essence of joyful and carefree moments on the dance floor.</li>
                 <li>Content Creation</li>
             </ul>
+        </section>
+
+        <!-- Add the date selector -->
+        <section>
+            <label for="date-selector">Select Date: </label>
+            <input type="date" id="date-selector">
+            <button id="fetch-button">Fetch Data</button>
         </section>
     </main>
 
@@ -52,52 +47,22 @@
         <p>&copy; 2023 My Simple Website. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/cheerio"></script>
-    
     <script>
-        // Find the <h2> and <h3> elements by their IDs
-        const scrapedH2 = document.getElementById('scraped-h2');
-        const scrapedH3 = document.getElementById('scraped-h3');
         const dateSelector = document.getElementById('date-selector');
         const fetchButton = document.getElementById('fetch-button');
-    
+
         fetchButton.addEventListener('click', () => {
             const selectedDate = dateSelector.value;
-    
+
             // Reformat selectedDate from YYYY-MM-DD to YYYY-MM-DD
             const formattedDate = selectedDate.replace(/\//g, '-');
-    
-            // URL of the website you want to scrape
-            const url = `https://mybirthdayhits.com/us/${formattedDate}/0/`;
-    
-            axios.get(url)
-                .then(response => {
-                    const html = response.data;
-                    const $ = cheerio.load(html);
-    
-                    const h2Elements = $('h2');
-                    const h3Elements = $('h3');
-    
-                    // Clear previous content
-                    scrapedH2.innerText = '';
-                    scrapedH3.innerText = '';
-    
-                    // Populate the <h2> and <h3> elements with the scraped data
-                    h2Elements.each((index, element) => {
-                        scrapedH2.innerText += $(element).text();
-                    });
-    
-                    h3Elements.each((index, element) => {
-                        scrapedH3.innerText += $(element).text();
-                    });
-                })
-                .catch(error => {
-                    console.error('Error fetching data:', error);
-                });
+
+            // URL of the external website
+            const externalUrl = `https://mybirthdayhits.com/us/${formattedDate}/0/`;
+
+            // Open the external URL in a new tab or window
+            window.open(externalUrl, '_blank');
         });
     </script>
-    
-    
 </body>
 </html>
