@@ -7,25 +7,39 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="confetti-container" id="confetti-container"></div>
+
     <header>
+        <section class="box">
         <h1 class="bouncing-title">Welcome to the Party</h1>
+        </section>
         <nav>
             <ul class="horizontal-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="pink"><a href="#">Home</a></li>
+                <li class="purple"><a href="#">Music</a></li>
+                <li class="blue"><a href="#">Wanna Find Your Song</a></li>
+                <li class="yellow"><a href="#">Cake</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="leftAlign">
+    <main class="grid-container">
+        <section class="leftAlignBox">
             <h2>Info</h2>
             <p>I was born on September 8th 1999</p>
         </section>
 
-        <section>
+        <section class="rightAlign">
+            <img src="Images\Bailamos.jpg" alt="About Us Image">
+
+        </section>
+        
+        
+        <section class="leftAlign">
+            <iframe width="460" height="315" src="https://www.youtube.com/embed/fw-YlZbIPQE?si=-lHL7flFZnByB3tl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+
+        <section class="rightAlignBox">
             <h2>Music</h2>
             <ul>
                 <li>Enrique Iglesias - Bailamos</li>
@@ -33,19 +47,35 @@
                 <li>A captivating and rhythmic pop song by Enrique Iglesias that effortlessly combines Latin flair with contemporary pop sensibilities. With its infectious melody and vibrant instrumentation, the track invites listeners to sway and dance along. Iglesias's emotive vocals add a layer of passion, making "Bailamos" an irresistible anthem of romance and celebration, capturing the essence of joyful and carefree moments on the dance floor.</li>
                 <li>Content Creation</li>
             </ul>
+            
         </section>
 
         <!-- Add the date selector -->
-        <section>
+        <section class="leftAlignBox">
+            <h2>Wanna Find your Song?</h2>
+
             <label for="date-selector">Select Date: </label>
             <input type="date" id="date-selector">
-            <button id="fetch-button">Fetch Data</button>
+            <button id="fetch-button">Go To sensibilities</button>
         </section>
+        <section class="rightAlign">
+            <img src="Images\Birthday.PNG" alt="About Us Image">
+        </section>
+
+        <Section class="centerAlignBox">
+            <h3>Have some Cake</h3>
+             <img src="Images\Cake.jpg" alt="About Us Image">
+
+        </Section>
+
+        
+
     </main>
 
     <footer>
-        <p>&copy; 2023 My Simple Website. All rights reserved.</p>
+        <p>&copy; 2023 Paul Seitz. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 
     <script>
         const dateSelector = document.getElementById('date-selector');
