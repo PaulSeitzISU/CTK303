@@ -11,14 +11,14 @@
 
     <header>
         <section class="box">
-        <h1 class="bouncing-title">Welcome to the Party</h1>
+        <h1 class="bouncing-title" id="home">Welcome to the Party</h1>
         </section>
         <nav>
             <ul class="horizontal-list">
-                <li class="pink"><a href="#">Home</a></li>
-                <li class="purple"><a href="#">Music</a></li>
-                <li class="blue"><a href="#">Wanna Find Your Song</a></li>
-                <li class="yellow"><a href="#">Cake</a></li>
+                <li class="pink"><a href="#home">Home</a></li>
+                <li class="purple"><a href="#music">Music</a></li>
+                <li class="blue"><a href="#find-song">Wanna Find Your Song</a></li>
+                <li class="yellow"><a href="#cake">Cake</a></li>
             </ul>
         </nav>
     </header>
@@ -40,7 +40,7 @@
         </section>
 
         <section class="rightAlignBox">
-            <h2>Music</h2>
+            <h2 id="music" >Music</h2>
             <ul>
                 <li>Enrique Iglesias - Bailamos</li>
                 <li>June 29, 1999</li>
@@ -51,7 +51,7 @@
         </section>
 
         <!-- Add the date selector -->
-        <section class="leftAlignBox">
+        <section class="leftAlignBox" id="find-song">
             <h2>Wanna Find your Song?</h2>
 
             <label for="date-selector">Select Date: </label>
@@ -62,7 +62,7 @@
             <img src="Images\Birthday.PNG" alt="About Us Image">
         </section>
 
-        <Section class="centerAlignBox">
+        <Section class="centerAlignBox" id="cake">
             <h3>Have some Cake</h3>
              <img src="Images\Cake.jpg" alt="About Us Image">
 
@@ -94,5 +94,24 @@
             window.open(externalUrl, '_blank');
         });
     </script>
+
+<script>
+    // Smooth scrolling when clicking on navigation links
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            const targetId = link.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
 </body>
 </html>
