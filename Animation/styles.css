@@ -1,0 +1,5230 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.gradient-rectangle {
+    width: 300px; /* Adjust the width of the rectangle as needed */
+    height: 200px; /* Adjust the height of the rectangle as needed */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.5)); /* X-axis gradient */
+    border-radius: 20px; /* Adjust the border radius as needed for rounded corners */
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 0.5)); /* Y-axis gradient */
+    border : 2px solid black;
+  }
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: auto;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden; /* Ensure ripples are contained within the container */
+}
+
+.ripple {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(225, 56, 197, 0.401); /* Ripple color and opacity */
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+    pointer-events: none; /* Allows clicks to pass through */
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4); /* Adjust the scale factor for ripple size */
+        opacity: 0;
+    }
+}
+
+.cube-grid {
+    display: grid;
+    grid-template-columns: repeat(32, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 10px; /* Adjust the gap between cubes as needed */
+  }
+  
+  .cosmic-cube {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.2s * var(--index)); /* Delay each cube by 0.2 seconds */
+  }
+
+  .cosmic-cube:nth-child(1) {
+    --index: 0;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(2) {
+    --index: 1;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(3) {
+    --index: 2;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(4) {
+    --index: 3;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(5) {
+    --index: 4;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(6) {
+    --index: 5;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(7) {
+    --index: 6;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(8) {
+    --index: 7;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(9) {
+    --index: 8;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(10) {
+    --index: 9;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(11) {
+    --index: 10;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(12) {
+    --index: 11;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(13) {
+    --index: 12;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(14) {
+    --index: 13;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(15) {
+    --index: 14;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(16) {
+    --index: 15;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(17) {
+    --index: 16;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(18) {
+    --index: 17;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(19) {
+    --index: 18;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(20) {
+    --index: 19;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(21) {
+    --index: 20;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(22) {
+    --index: 21;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(23) {
+    --index: 22;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(24) {
+    --index: 23;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(25) {
+    --index: 24;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(26) {
+    --index: 25;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(27) {
+    --index: 26;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(28) {
+    --index: 27;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(29) {
+    --index: 28;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(30) {
+    --index: 29;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(31) {
+    --index: 30;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(32) {
+    --index: 31;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(33) {
+    --index: 32;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(34) {
+    --index: 33;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(35) {
+    --index: 34;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(36) {
+    --index: 35;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(37) {
+    --index: 36;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(38) {
+    --index: 37;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(39) {
+    --index: 38;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(40) {
+    --index: 39;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(41) {
+    --index: 40;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(42) {
+    --index: 41;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(43) {
+    --index: 42;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(44) {
+    --index: 43;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(45) {
+    --index: 44;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(46) {
+    --index: 45;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(47) {
+    --index: 46;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(48) {
+    --index: 47;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(49) {
+    --index: 48;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(50) {
+    --index: 49;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(51) {
+    --index: 50;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(52) {
+    --index: 51;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(53) {
+    --index: 52;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(54) {
+    --index: 53;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(55) {
+    --index: 54;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(56) {
+    --index: 55;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(57) {
+    --index: 56;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(58) {
+    --index: 57;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(59) {
+    --index: 58;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(60) {
+    --index: 59;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(61) {
+    --index: 60;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(62) {
+    --index: 61;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(63) {
+    --index: 62;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(64) {
+    --index: 63;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(65) {
+    --index: 64;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(66) {
+    --index: 65;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(67) {
+    --index: 66;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(68) {
+    --index: 67;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(69) {
+    --index: 68;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(70) {
+    --index: 69;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(71) {
+    --index: 70;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(72) {
+    --index: 71;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(73) {
+    --index: 72;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(74) {
+    --index: 73;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(75) {
+    --index: 74;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(76) {
+    --index: 75;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(77) {
+    --index: 76;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(78) {
+    --index: 77;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(79) {
+    --index: 78;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(80) {
+    --index: 79;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(81) {
+    --index: 80;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(82) {
+    --index: 81;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(83) {
+    --index: 82;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(84) {
+    --index: 83;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(85) {
+    --index: 84;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(86) {
+    --index: 85;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(87) {
+    --index: 86;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(88) {
+    --index: 87;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(89) {
+    --index: 88;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(90) {
+    --index: 89;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(91) {
+    --index: 90;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(92) {
+    --index: 91;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(93) {
+    --index: 92;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(94) {
+    --index: 93;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(95) {
+    --index: 94;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(96) {
+    --index: 95;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(97) {
+    --index: 96;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(98) {
+    --index: 97;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(99) {
+    --index: 98;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(100) {
+    --index: 99;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(101) {
+    --index: 100;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(102) {
+    --index: 101;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(103) {
+    --index: 102;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(104) {
+    --index: 103;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(105) {
+    --index: 104;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(106) {
+    --index: 105;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(107) {
+    --index: 106;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(108) {
+    --index: 107;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(109) {
+    --index: 108;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(110) {
+    --index: 109;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(111) {
+    --index: 110;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(112) {
+    --index: 111;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(113) {
+    --index: 112;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(114) {
+    --index: 113;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(115) {
+    --index: 114;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(116) {
+    --index: 115;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(117) {
+    --index: 116;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(118) {
+    --index: 117;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(119) {
+    --index: 118;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(120) {
+    --index: 119;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(121) {
+    --index: 120;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(122) {
+    --index: 121;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(123) {
+    --index: 122;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(124) {
+    --index: 123;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(125) {
+    --index: 124;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(126) {
+    --index: 125;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(127) {
+    --index: 126;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(128) {
+    --index: 127;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(129) {
+    --index: 128;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(130) {
+    --index: 129;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(131) {
+    --index: 130;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(132) {
+    --index: 131;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(133) {
+    --index: 132;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(134) {
+    --index: 133;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(135) {
+    --index: 134;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(136) {
+    --index: 135;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(137) {
+    --index: 136;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(138) {
+    --index: 137;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(139) {
+    --index: 138;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(140) {
+    --index: 139;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(141) {
+    --index: 140;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(142) {
+    --index: 141;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(143) {
+    --index: 142;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(144) {
+    --index: 143;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(145) {
+    --index: 144;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(146) {
+    --index: 145;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(147) {
+    --index: 146;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(148) {
+    --index: 147;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(149) {
+    --index: 148;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(150) {
+    --index: 149;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(151) {
+    --index: 150;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(152) {
+    --index: 151;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(153) {
+    --index: 152;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(154) {
+    --index: 153;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(155) {
+    --index: 154;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(156) {
+    --index: 155;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(157) {
+    --index: 156;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(158) {
+    --index: 157;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(159) {
+    --index: 158;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(160) {
+    --index: 159;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(161) {
+    --index: 160;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(162) {
+    --index: 161;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(163) {
+    --index: 162;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(164) {
+    --index: 163;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(165) {
+    --index: 164;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(166) {
+    --index: 165;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(167) {
+    --index: 166;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(168) {
+    --index: 167;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(169) {
+    --index: 168;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(170) {
+    --index: 169;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(171) {
+    --index: 170;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(172) {
+    --index: 171;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(173) {
+    --index: 172;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(174) {
+    --index: 173;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(175) {
+    --index: 174;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(176) {
+    --index: 175;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(177) {
+    --index: 176;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(178) {
+    --index: 177;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(179) {
+    --index: 178;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(180) {
+    --index: 179;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(181) {
+    --index: 180;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(182) {
+    --index: 181;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(183) {
+    --index: 182;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(184) {
+    --index: 183;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(185) {
+    --index: 184;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(186) {
+    --index: 185;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(187) {
+    --index: 186;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(188) {
+    --index: 187;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(189) {
+    --index: 188;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(190) {
+    --index: 189;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(191) {
+    --index: 190;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(192) {
+    --index: 191;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(193) {
+    --index: 192;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(194) {
+    --index: 193;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(195) {
+    --index: 194;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(196) {
+    --index: 195;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(197) {
+    --index: 196;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(198) {
+    --index: 197;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(199) {
+    --index: 198;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(200) {
+    --index: 199;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(201) {
+    --index: 200;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(202) {
+    --index: 201;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(203) {
+    --index: 202;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(204) {
+    --index: 203;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(205) {
+    --index: 204;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(206) {
+    --index: 205;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(207) {
+    --index: 206;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(208) {
+    --index: 207;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(209) {
+    --index: 208;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(210) {
+    --index: 209;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(211) {
+    --index: 210;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(212) {
+    --index: 211;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(213) {
+    --index: 212;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(214) {
+    --index: 213;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(215) {
+    --index: 214;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(216) {
+    --index: 215;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(217) {
+    --index: 216;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(218) {
+    --index: 217;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(219) {
+    --index: 218;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(220) {
+    --index: 219;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(221) {
+    --index: 220;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(222) {
+    --index: 221;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(223) {
+    --index: 222;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(224) {
+    --index: 223;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(225) {
+    --index: 224;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(226) {
+    --index: 225;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(227) {
+    --index: 226;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(228) {
+    --index: 227;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(229) {
+    --index: 228;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(230) {
+    --index: 229;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(231) {
+    --index: 230;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(232) {
+    --index: 231;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(233) {
+    --index: 232;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(234) {
+    --index: 233;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(235) {
+    --index: 234;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(236) {
+    --index: 235;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(237) {
+    --index: 236;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(238) {
+    --index: 237;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(239) {
+    --index: 238;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(240) {
+    --index: 239;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(241) {
+    --index: 240;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(242) {
+    --index: 241;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(243) {
+    --index: 242;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(244) {
+    --index: 243;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(245) {
+    --index: 244;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(246) {
+    --index: 245;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(247) {
+    --index: 246;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(248) {
+    --index: 247;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(249) {
+    --index: 248;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(250) {
+    --index: 249;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(251) {
+    --index: 250;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(252) {
+    --index: 251;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(253) {
+    --index: 252;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(254) {
+    --index: 253;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(255) {
+    --index: 254;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(256) {
+    --index: 255;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(257) {
+    --index: 256;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(258) {
+    --index: 257;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(259) {
+    --index: 258;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(260) {
+    --index: 259;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(261) {
+    --index: 260;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(262) {
+    --index: 261;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(263) {
+    --index: 262;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(264) {
+    --index: 263;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(265) {
+    --index: 264;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(266) {
+    --index: 265;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(267) {
+    --index: 266;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(268) {
+    --index: 267;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(269) {
+    --index: 268;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(270) {
+    --index: 269;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(271) {
+    --index: 270;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(272) {
+    --index: 271;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(273) {
+    --index: 272;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(274) {
+    --index: 273;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(275) {
+    --index: 274;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(276) {
+    --index: 275;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(277) {
+    --index: 276;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(278) {
+    --index: 277;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(279) {
+    --index: 278;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(280) {
+    --index: 279;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(281) {
+    --index: 280;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(282) {
+    --index: 281;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(283) {
+    --index: 282;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(284) {
+    --index: 283;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(285) {
+    --index: 284;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(286) {
+    --index: 285;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(287) {
+    --index: 286;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(288) {
+    --index: 287;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(289) {
+    --index: 288;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(290) {
+    --index: 289;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(291) {
+    --index: 290;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(292) {
+    --index: 291;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(293) {
+    --index: 292;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(294) {
+    --index: 293;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(295) {
+    --index: 294;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(296) {
+    --index: 295;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(297) {
+    --index: 296;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(298) {
+    --index: 297;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(299) {
+    --index: 298;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(300) {
+    --index: 299;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(301) {
+    --index: 300;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(302) {
+    --index: 301;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(303) {
+    --index: 302;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(304) {
+    --index: 303;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(305) {
+    --index: 304;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(306) {
+    --index: 305;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(307) {
+    --index: 306;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(308) {
+    --index: 307;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(309) {
+    --index: 308;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(310) {
+    --index: 309;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(311) {
+    --index: 310;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(312) {
+    --index: 311;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(313) {
+    --index: 312;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(314) {
+    --index: 313;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(315) {
+    --index: 314;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(316) {
+    --index: 315;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(317) {
+    --index: 316;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(318) {
+    --index: 317;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(319) {
+    --index: 318;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(320) {
+    --index: 319;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(321) {
+    --index: 320;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(322) {
+    --index: 321;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(323) {
+    --index: 322;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(324) {
+    --index: 323;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(325) {
+    --index: 324;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(326) {
+    --index: 325;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(327) {
+    --index: 326;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(328) {
+    --index: 327;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(329) {
+    --index: 328;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(330) {
+    --index: 329;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(331) {
+    --index: 330;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(332) {
+    --index: 331;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(333) {
+    --index: 332;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(334) {
+    --index: 333;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(335) {
+    --index: 334;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(336) {
+    --index: 335;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(337) {
+    --index: 336;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(338) {
+    --index: 337;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(339) {
+    --index: 338;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(340) {
+    --index: 339;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(341) {
+    --index: 340;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(342) {
+    --index: 341;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(343) {
+    --index: 342;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(344) {
+    --index: 343;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(345) {
+    --index: 344;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(346) {
+    --index: 345;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(347) {
+    --index: 346;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(348) {
+    --index: 347;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(349) {
+    --index: 348;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(350) {
+    --index: 349;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(351) {
+    --index: 350;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(352) {
+    --index: 351;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(353) {
+    --index: 352;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(354) {
+    --index: 353;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(355) {
+    --index: 354;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(356) {
+    --index: 355;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(357) {
+    --index: 356;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(358) {
+    --index: 357;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(359) {
+    --index: 358;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(360) {
+    --index: 359;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(361) {
+    --index: 360;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(362) {
+    --index: 361;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(363) {
+    --index: 362;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(364) {
+    --index: 363;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(365) {
+    --index: 364;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(366) {
+    --index: 365;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(367) {
+    --index: 366;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(368) {
+    --index: 367;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(369) {
+    --index: 368;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(370) {
+    --index: 369;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(371) {
+    --index: 370;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(372) {
+    --index: 371;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(373) {
+    --index: 372;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(374) {
+    --index: 373;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(375) {
+    --index: 374;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(376) {
+    --index: 375;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(377) {
+    --index: 376;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(378) {
+    --index: 377;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(379) {
+    --index: 378;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(380) {
+    --index: 379;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(381) {
+    --index: 380;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(382) {
+    --index: 381;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(383) {
+    --index: 382;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(384) {
+    --index: 383;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(385) {
+    --index: 384;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(386) {
+    --index: 385;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(387) {
+    --index: 386;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(388) {
+    --index: 387;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(389) {
+    --index: 388;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(390) {
+    --index: 389;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(391) {
+    --index: 390;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(392) {
+    --index: 391;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(393) {
+    --index: 392;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(394) {
+    --index: 393;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(395) {
+    --index: 394;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(396) {
+    --index: 395;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(397) {
+    --index: 396;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(398) {
+    --index: 397;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(399) {
+    --index: 398;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(400) {
+    --index: 399;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(401) {
+    --index: 400;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(402) {
+    --index: 401;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(403) {
+    --index: 402;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(404) {
+    --index: 403;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(405) {
+    --index: 404;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(406) {
+    --index: 405;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(407) {
+    --index: 406;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(408) {
+    --index: 407;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(409) {
+    --index: 408;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(410) {
+    --index: 409;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(411) {
+    --index: 410;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(412) {
+    --index: 411;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(413) {
+    --index: 412;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(414) {
+    --index: 413;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(415) {
+    --index: 414;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(416) {
+    --index: 415;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(417) {
+    --index: 416;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(418) {
+    --index: 417;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(419) {
+    --index: 418;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(420) {
+    --index: 419;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(421) {
+    --index: 420;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(422) {
+    --index: 421;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(423) {
+    --index: 422;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(424) {
+    --index: 423;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(425) {
+    --index: 424;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(426) {
+    --index: 425;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(427) {
+    --index: 426;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(428) {
+    --index: 427;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(429) {
+    --index: 428;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(430) {
+    --index: 429;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(431) {
+    --index: 430;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(432) {
+    --index: 431;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(433) {
+    --index: 432;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(434) {
+    --index: 433;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(435) {
+    --index: 434;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(436) {
+    --index: 435;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(437) {
+    --index: 436;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(438) {
+    --index: 437;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(439) {
+    --index: 438;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(440) {
+    --index: 439;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(441) {
+    --index: 440;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(442) {
+    --index: 441;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(443) {
+    --index: 442;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(444) {
+    --index: 443;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(445) {
+    --index: 444;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(446) {
+    --index: 445;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(447) {
+    --index: 446;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(448) {
+    --index: 447;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(449) {
+    --index: 448;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(450) {
+    --index: 449;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(451) {
+    --index: 450;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(452) {
+    --index: 451;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(453) {
+    --index: 452;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(454) {
+    --index: 453;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(455) {
+    --index: 454;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(456) {
+    --index: 455;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(457) {
+    --index: 456;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(458) {
+    --index: 457;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(459) {
+    --index: 458;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(460) {
+    --index: 459;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(461) {
+    --index: 460;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(462) {
+    --index: 461;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(463) {
+    --index: 462;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(464) {
+    --index: 463;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(465) {
+    --index: 464;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(466) {
+    --index: 465;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(467) {
+    --index: 466;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(468) {
+    --index: 467;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(469) {
+    --index: 468;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(470) {
+    --index: 469;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(471) {
+    --index: 470;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(472) {
+    --index: 471;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(473) {
+    --index: 472;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(474) {
+    --index: 473;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(475) {
+    --index: 474;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(476) {
+    --index: 475;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(477) {
+    --index: 476;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(478) {
+    --index: 477;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(479) {
+    --index: 478;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(480) {
+    --index: 479;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(481) {
+    --index: 480;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(482) {
+    --index: 481;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(483) {
+    --index: 482;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(484) {
+    --index: 483;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(485) {
+    --index: 484;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(486) {
+    --index: 485;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(487) {
+    --index: 486;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(488) {
+    --index: 487;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(489) {
+    --index: 488;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(490) {
+    --index: 489;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(491) {
+    --index: 490;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(492) {
+    --index: 491;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(493) {
+    --index: 492;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(494) {
+    --index: 493;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(495) {
+    --index: 494;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(496) {
+    --index: 495;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(497) {
+    --index: 496;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(498) {
+    --index: 497;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(499) {
+    --index: 498;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(500) {
+    --index: 499;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(501) {
+    --index: 500;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(502) {
+    --index: 501;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(503) {
+    --index: 502;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(504) {
+    --index: 503;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(505) {
+    --index: 504;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(506) {
+    --index: 505;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(507) {
+    --index: 506;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(508) {
+    --index: 507;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(509) {
+    --index: 508;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(510) {
+    --index: 509;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(511) {
+    --index: 510;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+.cosmic-cube:nth-child(512) {
+    --index: 511;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(0.02s * var(--index));
+   /* Delay each cube by 0.2 seconds */
+}
+
+  
+
+
+/* Cube faces styles */
+.cosmic-cube .cube-face {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #000;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6px;
+  font-weight: bold;
+}
+
+
+.cube-front  { transform: translateZ(10px); }
+.cube-back   { transform: translateZ(-10px) rotateY(180deg); }
+.cube-left   { transform: translateX(-10px) rotateY(-90deg); }
+.cube-right  { transform: translateX(10px) rotateY(90deg); }
+.cube-top    { transform: translateY(-10px) rotateX(90deg); }
+.cube-bottom { transform: translateY(10px) rotateX(-90deg); }
+
+
+/* Keyframes for the cube rotation */
+@keyframes spin {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+  
+  
