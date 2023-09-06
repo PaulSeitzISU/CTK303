@@ -5,15 +5,15 @@ body, html {
 }
 
 .gradient-rectangle {
-    width: 600px; /* Adjust the width of the rectangle as needed */
-    height: 400px; /* Adjust the height of the rectangle as needed */
+    width: 600px; 
+    height: 400px; 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.5)); /* X-axis gradient */
-    border-radius: 20px; /* Adjust the border radius as needed for rounded corners */
-    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 0.5)); /* Y-axis gradient */
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.5)); 
+    border-radius: 20px; 
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 0.5)); 
     border : 4px solid black;
   }
   h1 {
