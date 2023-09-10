@@ -1,0 +1,165 @@
+body {
+    background-color: #5f3e0172;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+.coffee-svg {
+    padding: 50px;
+    overflow: visible;
+}
+.loading-div {
+    width: 650px;
+    height: auto;
+    margin: auto;
+    animation: up-and-down 5s ease-in-out infinite;
+
+}
+.cls-1 {
+    fill: #999;
+  }
+
+  .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+    stroke-width: 0px;
+  }
+
+  .cls-2 {
+    fill: #331700;
+  }
+
+  .cls-3 {
+    fill: #ddd;
+  }
+
+  .cls-4 {
+    fill: #ccc;
+  }
+
+  .cls-5 {
+    fill: #af9680;
+    overflow: "visible";
+  }
+
+  .cls-6 {
+    fill: #b0b0b0;
+    overflow: visible;
+
+  }
+
+  .cls-7 {
+    fill: #e8e8e8;
+  }
+
+  .cls-8 {
+    fill: #cecece;
+  }
+
+  .tilt-div {
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    line-height: 200px;
+    font-size: 24px;
+    transform-origin: 50%  53%; /* Set the transform origin to the center */
+    transform: rotate3d(1, 0, 0, 80deg);
+  }
+
+  .tilt-spin {
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    line-height: 200px;
+    font-size: 24px;
+    transform-origin: 50%  50%; /* Set the transform origin to the center */
+    transform: rotate3d(1, 0, 0, 80deg);
+     animation: spin 4s linear infinite; 
+
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate3d(0, 0, 0, 0deg); /* Rotate from 0 degrees */
+    }
+    100% {
+      transform: rotate3d(0, 0, 1, -360deg); /* Rotate in 3D space around all axes */
+    }
+  }
+
+  .moving-element {
+    width: 100px;
+    height: 50px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    margin: 20px;
+    position: relative;
+    animation-duration: 2s; /* Adjust the duration for your desired speed */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  #element1 {
+    animation-name: move-up-down;
+    animation-delay: 0s; /* Adjust the delay for the first element */
+  }
+  
+  #element2 {
+    animation-name: move-up-down;
+    animation-delay: .2s; /* Adjust the delay for the second element */
+  }
+  
+  @keyframes move-up-down {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); /* Adjust the amount of movement */
+    }
+  }
+
+  .wobble-element {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    position: relative;
+    margin: 50px auto;
+    transform-origin: center bottom; /* Adjust the transform origin */
+    transform: translateY(-20px);
+    animation: wobble 3s ease-in-out infinite;
+  }
+  
+  @keyframes wobble {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    20%, 60%, 80% {
+      transform: rotate(5deg); /* Move down and wobble */
+    }
+    40%, 70% {
+      transform: rotate(-5deg); /* Move up and wobble */
+    }
+  }
+
+  .up-and-down-element {
+    animation: up-and-down 3s ease-in-out infinite;
+  }
+  
+  @keyframes up-and-down {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(40px); /* Adjust the amount of movement */
+    }
+  }
