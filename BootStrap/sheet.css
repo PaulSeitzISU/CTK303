@@ -1,0 +1,246 @@
+@font-face {
+    font-family: BlackoutMidnight;
+    src: url(fonts/Blackout-Midnight.ttf) format('truetype');
+}
+
+html {
+	font-size: 16px;
+}
+.html {
+	font-size: 16px;
+}
+
+body {
+    background-color: black; display: block;
+}
+
+.box1 {
+    /* margin: 1em ; */
+	padding: 0;
+    border: .3rem solid white;
+    background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+    display: block;
+}
+
+.box2 {
+    margin: .25rem;
+    padding: 0;
+    border: .2rem solid white;
+    background-color: black;
+    display: block;
+
+}
+
+.box3 {
+    margin: .25rem;
+    padding: 0;
+    border: .1rem solid white;
+    background-color: black;
+    display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(12, 1fr);
+    column-gap: 1em;
+	grid-template-rows: auto;
+}
+
+.h1top {
+    text-align: left;
+    margin-bottom: 0px;
+    margin-block-end: 0em;
+    margin-top: 0;
+}
+
+.h1bot {
+    text-align: right;
+    margin-bottom: 0px;
+    margin-block-start: 0em;
+    margin-top: 0;
+    padding-left: 2rem;
+}
+
+.showpiece {
+    border: 4px solid white;
+    border-radius: 15px;
+    margin: 1rem;
+    width: 38%;
+    height: auto;
+}
+
+.footerDiv {
+    border-top: 2px solid white;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerText {
+	flex: 1;
+
+    float: left;
+}
+.games {
+    align-content: center;
+
+}
+
+.footerLinkText {
+    color: white;
+    font-size: 2rem;
+    height: 24px;
+    weight: 24px;
+    margin-top: 12px;
+    margin-left: 12px;
+    float: right;
+}
+
+.footerGrid1 {
+    grid-column: 1;
+}
+
+.footerGrid2 {
+    grid-column: 2;
+}
+
+.footerGrid3 {
+    grid-column: 3;
+}
+
+.title {
+    color: white;
+    font-size: 4em;
+    font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+    text-align: center;
+    grid-column: span 3;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+.displayPictureText
+{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.contactLink {
+    text-decoration: solid underline white 2px;
+    margin-top: 60px;
+    color: white;
+    font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+    text-align: center;
+}
+
+.contactLink:hover {
+    text-decoration: solid underline lightgrey 2px;
+    margin-top: 60px;
+    color: lightgrey;
+    font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+    text-align: center;
+}
+
+.spacer {
+    grid-column: span 1;
+    float: left;
+}
+
+div {
+    grid-column: span 12;
+}
+h1 {
+    color: white;
+    font-size: 2rem;
+    font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+    grid-area: 1 / 1 / 1 / 13;
+    margin-bottom: 0em;
+	margin-left: 1rem;
+	height: auto;
+}
+h2 {
+    color: white;
+    font-size: 1.5rem;
+    font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+    margin-bottom: 0em;
+    height: auto;
+    text-align: center;
+
+}
+
+p {
+    color: white;
+}
+
+nav {
+	display: inline-grid;
+	grid-area: 2 / 1 / 2 / 13;
+    margin-top: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    width: auto;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+	display: flex; /* Display list items horizontally */
+    justify-content: right; /* Center-align the list items */
+}
+
+
+nav ul li {
+	color: white;
+    font-size: 1rem;
+    font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+	margin-right: 1rem;
+    list-style: none;
+    width: auto;
+}
+
+nav ul li a {
+	color: white;
+	font-size: 1rem;
+	font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+	text-decoration: none;
+}
+
+footer {
+	display: inline-grid;
+    margin: .5rem;
+
+    margin-top: 72px;
+    grid-column: span 12;
+}
+
+/* Media query for phones (up to 767px) */
+@media (max-width: 767px) {
+	.html { font-size: 16px }
+    .showpiece {
+        width: 80%; 
+        margin-left: 9.25%;
+        margin-right: 9.25%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    h2 { margin-top: 0;}
+    
+}
+
+/* Media query for tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1599px) {
+	.html { font-size: 20px }
+    div {display: flex;}
+    h1 { font-size: 3rem; }
+    
+}
+
+/* Media query for desktops (1024px and above) */
+@media (min-width: 1600px) {
+	.html { font-size: 40px; }
+	.box1 { width: 80%; }
+	.footerLinkText { font-size: 1rem; }
+	p { font-size: .5rem; }
+	nav ul li a{ font-size: .5rem; }
+    div {display: flex;}
+
+}
