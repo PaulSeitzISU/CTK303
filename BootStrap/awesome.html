@@ -57,51 +57,68 @@ p {
     background-color: black;
 }
 
+.navbar { 
+  font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+}
     </style>
 </head>
 <body class = "">
   <div class="box1 container mx-auto">
     <div class="box2 container">
       <div class="box3 container">
-                <h1><span class="h1top">PAUL</span><br><span class="h1bot">SEITZ</span></h1>
 
-                <nav>
-                    <ul>
-                        <li><a href="main.html">Home</a></li>
-                        <li><a href="games.html">Games</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="studio.html">Studio</a></li>
-                    </ul>
+                <nav class="navbar sticky-top navbar-expand-md bg-body-tertiary" data-bs-theme="dark">
+                  <h1 class="navbar-brand"><span class="h1top">PAUL</span><br><span class="h1bot">SEITZ</span></h1>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+                      <ul class="nav nav-underline navbar-nav d-flex justify-content-end ">
+                          <li class="nav-item" ><a class="nav-link" href="main.html">Home</a></li>
+                          <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>
+                          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                          <li class="nav-item"><a class="nav-link" href="studio.html">Studio</a></li>
+                      </ul>
+                    </div>  
                 </nav>
+
+                <div class="row justify-content-center">
+                  <div class="col-4 my-auto">
+                    <h2 class="text-center fs-2">- About Me -</h2>
+                    <p class = "mx-4 d-none d-md-block">I am a Game Designer, who can do a bit of everything. I am capable of level design, 2d Graphics, UI, Music, Sound Effects, product design, and Animations. I'm proficient with the Adobe suite and Unity.</p>
+                    <a class = "text-center " href="other/resume.pdf"><h4>Resume</h4></a>
+                    <a class = "text-center" href="form.html"><h4>Contact me</h4></a>
+                  </div>
+                  <a class = "col-6 col-lg-4" href="img/paulseitz.png" data-fancybox="gallery" data-caption="Shoes - Acrylic" ><img class = "img-thumbnail m-4" src="img/paulseitz.png" alt="png"></a>
+                </div>
+
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xl-4 col-md-6 px-sm-0">
+                      <div class="container mx-0">
+                        <img src="img/homescreen2.png" href="games.html" class="img-thumbnail m-0" alt="Image 1">
+                      </div>
+                      <h2 class="text-center my-2">- The Lost Slime -</h2>
+                      <p class="mx-4 ">This was a solo class project I developed using buildbox. This game was made in 2019.</p>
+                    </div>
+                    <div class="col-xl-4 col-md-6 px-sm-0">
+                      <div class="container">
+                        <img src="img/homescreenNightCrawl.png" href="games.html" class="img-thumbnail m-0" alt="Image 2">
+                      </div>
+                      <h2 class="text-center my-2">- Night Crawl -</h2>
+                      <p class="mx-4">This project was developed by the members of the ISU Game Development Club in the Spring of 2022. My main contribution was music and sound effects.</p>
+                    </div>
+                    <div class="col-xl-4 col-md-6 px-sm-0">
+                      <div class="container">
+                        <img src="img/homerun.png" href="games.html" class="img-thumbnail m-0" alt="Image 3">
+                      </div>
+                      <h2 class="text-center my-2">- Baseball Derby -</h2>
+                      <p class="mx-4">This was a solo class project that was made with Unity. It was made in Spring 2022.</p>
+                    </div>
+                  </div>
+                </div>
                 
-                <div class="row">
-                  <div class="col container">
-                    <img src="img/homescreen2.png"  href="games.html" class="container img-thumbnail"></img>
-                  </div> 
-                  <div class="col">
-                    <h2>- The Lost Slime -</h2>
-                    <p class = "">This was a solo class project I developed using buildbox. This game was made in 2019.</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <img src="img/homescreenNightCrawl.png"  href="games.html" class="container img-thumbnail "></img>
-                  </div>
-                  <div class="col">
-                    <h2>- Night Crawl -</h2>
-                    <p class="">This project was developed by the members of the ISU Game Development Club in the Spring of 2022. My main contabustion was music and sound effects.</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <img src="img/homerun.png"  href="games.html" class="container img-thumbnail "></img>
-                  </div>
-                  <div class="col">
-                    <h2>- Baseball Derby -</h2>
-                    <p class="">This was a solo class project that was made with Unity. It was made in Spring 2022.</p>
-                  </div>
-                </div>
-                <footer>
+                <footer class="mx-4">
                     <div class="footerDiv row">
                         <p class="footerGrid1 footerText col">© 2022 Paul Seitz</p>
                         <div class="col text-end">
@@ -111,6 +128,7 @@ p {
                         </div>
                     </div>
                 </footer>
+
       </div>
     </div>
   </div>
