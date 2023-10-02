@@ -11,12 +11,17 @@ html {
 }
 
 body {
-    background-color: black; display: block;
+    background-color: black;
+	display: block;
+
+
+
 }
 
 .box1 {
     /* margin: 1em ; */
-	padding: 0;
+	width: 100%;
+    padding: 0;
     border: .3rem solid white;
     background-color: black;
 	margin-left: auto;
