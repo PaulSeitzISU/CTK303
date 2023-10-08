@@ -36,7 +36,6 @@ p {
     padding: 0;
     border: .3rem solid white;
     background-color: black;
-    display: block;
 }
 
 .box2 {
@@ -68,7 +67,7 @@ p {
       <div class="box3 container">
 
                 <nav class="navbar sticky-top navbar-expand-md bg-body-tertiary" data-bs-theme="dark">
-                  <h1 class="navbar-brand"><span class="h1top">PAUL</span><br><span class="h1bot">SEITZ</span></h1>
+                  <h1 class="navbar-brand mx-4"><span class="h1top">PAUL</span><br><span class="h1bot"> &nbsp;&nbsp; SEITZ</span></h1>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -84,11 +83,22 @@ p {
 
                 <div class="row justify-content-center">
                   <div class="col-4 my-auto">
-                    <h2 class="text-center fs-5 d-none d-sm-block">- About Me -</h2>
-                    <h2 class="text-center d-block d-sm-none">- About Me -</h2>
+
+                    <h2 class="text-center d-none d-md-block">- About Me -</h2>
+                    <h2 class="text-center fs-5 d-none d-sm-block d-md-none">- About Me -</h2>
+                    <h2 class="text-center fs-6 d-block d-sm-none">-About Me-</h2>
+
                     <p class = "mx-4 d-none d-lg-block">I am a Game Designer, who can do a bit of everything. I am capable of level design, 2d Graphics, UI, Music, Sound Effects, product design, and Animations. I'm proficient with the Adobe suite and Unity.</p>
-                    <a class = "text-center " href="other/resume.pdf"><h4>Resume</h4></a>
-                    <a class = "text-center" href="form.html"><h4>Contact me</h4></a>
+                    
+
+                    <a class = "text-center d-md-none" href="other/resume.pdf"><h4 class="fs-6 ">Resume</h4></a>
+                    <a class = "text-center d-none d-md-block" href="other/resume.pdf"><h4>Resume</h4></a>
+
+
+                    <a class = "text-center d-md-none" href="form.html"><h4 class="fs-6 ">Contact me</h4></a>
+                    <a class = "text-center d-none d-md-block" href="form.html"><h4>Contact me</h4></a>
+
+
                   </div>
                   <a class = "col-6 col-lg-4" href="img/paulseitz.png" data-fancybox="gallery" data-caption="Shoes - Acrylic" ><img class = "img-thumbnail m-4" src="img/paulseitz.png" alt="png"></a>
                 </div>
