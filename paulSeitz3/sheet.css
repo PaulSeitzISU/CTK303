@@ -1,0 +1,470 @@
+@font-face {
+  font-family: BlackoutMidnight;
+  src: url(fonts/Blackout-Midnight.ttf) format('truetype');
+}
+
+body {
+  background-color: black;
+}
+
+
+header {
+  grid-template-columns: repeat(12,1fr);
+}
+
+.box1 {
+  margin: 1em auto;
+  padding: 0;
+  width: 1200px;
+  border: 6px solid white;
+  background-color: black;
+}
+
+.box2 {
+  margin: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 0;
+  width: auto;
+  border: 4px solid white;
+  background-color: black;
+}
+
+.box3 {
+  margin: 1em;
+  padding: 0;
+  width: auto;
+  border: 2px solid white;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  column-gap: 1em;
+}
+
+
+.wrapper {
+  margin: 1em auto;
+  padding: 0;
+  width: 960px;
+  border: 1px solid #ff0000;
+  background-color: #ffffff;
+
+}
+
+.spanstart {
+ grid-column: 8;
+ text-align: right;
+}
+.spannorm {
+grid-column: auto / span 1;
+text-align: right;
+}
+
+.h1top {
+  text-align: left;
+  grid-column: 2 / span 2;
+  margin-bottom: 0px;
+  margin-block-end: 0em;
+  margin-top: 0;
+}
+
+.h1bot {
+  text-align: right;
+  grid-column: 4  / span 2;
+  margin-bottom: 0px;
+  margin-block-start: 0em;
+  margin-top: 0;
+  padding-left: 128px;
+}
+
+.showpiece {
+  border: 4px solid white;
+  border-radius: 15px;
+  margin-top: 40px;
+  height: 314px;
+  width: auto;
+  background-image: url(img/homescreen2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column: 2 / span 6;
+  transition: background-image .75S;
+}
+
+.showpiece:hover {
+  margin-top: 40px;
+  height: 314px;
+  width: auto;
+  background-image: url(img/slimegamegif.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column: 2 / span 6;
+
+}
+
+.showpieceNightCrawl {
+  border: 4px solid white;
+  border-radius: 15px;
+  margin-top: 40px;
+  height: 314px;
+  width: auto;
+  background-image: url(img/homescreenNightCrawl.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column: 2 / span 6;
+  transition: background-image .75S;
+}
+
+.showpieceNightCrawl:hover {
+  margin-top: 40px;
+  height: 314px;
+  width: auto;
+  background-image: url(img/nightCrawlGif.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column: 2 / span 6;
+}
+
+.showpieceBaseballDerbyNew {
+  border: 4px solid white;
+  border-radius: 15px;
+  margin-top: 40px;
+  height: 314px;
+  width: auto;
+  background-image: url(img/homerun.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column: 2 / span 6;
+  transition: background-image .75S;
+}
+
+.showpieceBaseballDerbyNew:hover {
+  margin-top: 40px;
+  height: 314px;
+  width: auto;
+  background-image: url(img/homerungif.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column: 2 / span 6;
+}
+
+.showpieceBaseballDerby {
+  border: 4px solid white;
+  border-radius: 15px;
+  margin-top: 40px;
+  height: 314px;
+  width: auto;
+  background-image: url(img/wip.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-column: 2 / span 6;
+  transition: background-image .75S;
+}
+
+.showpieceBaseballDerby:hover {
+  margin-top: 40px;
+  height: 314px;
+  width: auto;
+  background-image: url(img/wip.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column: 2 / span 6;
+}
+
+.showpieceAlt {
+  border: 4px solid white;
+  border-radius: 15px;
+  margin-top: 80px;
+  height: 314px;
+  width: auto;
+  background-image: url(img/homescreen2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column: 6 / span 6;
+  transition: background-image .75S;
+}
+
+.showpieceAlt:hover {
+  margin-top: 80px;
+  height: 314px;
+  width: auto;
+  background-image: url(img/slimegamegif.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column: 6 / span 6;
+
+}
+
+.displayGame{
+
+  width: 800px;
+height: auto;
+  margin: auto;
+  grid-column: span 12;
+}
+
+.gameLinks{
+  grid-column: 5 / 9;
+  text-align:  center;
+  margin-bottom: 0;
+}
+
+.displaypiece {
+    margin:auto;
+  height: 314px;
+  width: auto;
+  grid-column: 2 / span 6;
+}
+
+.displaypieceAlt {
+    margin:auto;
+  height: 314px;
+  width: auto;
+  grid-column: 6 / span 6;
+  float: right;
+}
+
+.displaypieceSmall {
+    margin:auto;
+  grid-column: 2 / span 6;
+}
+
+.displaypieceSmallAlt {
+    margin:auto;
+  grid-column: 6 / span 6;
+  float: right;
+}
+
+
+.displayAudio {
+  margin:auto;
+  margin-top: 6em;
+  grid-column: 2 / span 6;
+}
+
+.displayAudioAlt {
+  margin:auto;
+  grid-column: 6 / span 6;
+  float: right;
+}
+
+
+
+.bottompadding{
+  padding-bottom: 2em;
+}
+
+.paulseitz {
+  height:   32em;
+  width: auto;
+}
+
+.paulseitzAlt
+{
+
+  font-size: 2em;
+}
+
+.mainPictureText {
+ margin-top: 0px;
+ grid-column: 8 / 12 ;
+ text-align: right;
+ font-family: 'Bitter', serif;
+
+}
+
+.displayPictureText {
+ margin: 1em;
+ margin-top: 20px;
+ grid-column: 8 / 12 ;
+ font-family: 'Bitter', serif;
+
+}
+
+.displayPictureTextAlt {
+  margin: 1em;
+ margin-top: 20px;
+ grid-column: 2 / 6 ;
+ font-family: 'Bitter', serif;
+
+}
+.form{
+  display: block;
+  border: 4px solid white;
+  border-radius: 15px;
+  grid-column: span 12;
+  margin: auto;
+}
+
+.spacer{
+  display: block;
+  grid-column: span 12;
+  float: left;
+}
+
+
+
+.footerDiv {
+  border-top: 2px solid white;
+}
+
+.footerText {
+  float: left;
+}
+
+.footerLinkImages {
+  height: 24px;
+  weight: 24px;
+  margin-top: 12px;
+  margin-left: 12px;
+  float: right;
+}
+
+.footerLinkText {
+  color: white;
+  font-size: 24px;
+  height: 24px;
+  weight: 24px;
+  margin-top: 12px;
+  margin-left: 12px;
+  float: right;
+}
+
+.footerGrid1 {
+  grid-column: 1;
+}
+
+.footerGrid2 {
+  grid-column: 2;
+}
+
+.footerGrid3 {
+  grid-column: 3;
+}
+
+
+.title{
+  color: white;
+  font-size: 4em;
+  font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+  text-align: center;
+  grid-column: span 12;
+  margin-top:;
+  margin-bottom: 0px;
+}
+
+.contactLink {
+  text-decoration: solid underline white 2px;
+  margin-top: 60px;
+  color: white;
+  font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+  text-align: center;
+}
+
+.contactLink:hover {
+  text-decoration: solid underline lightgrey 2px;
+  margin-top: 60px;
+  color: lightgrey;
+  font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+  text-align: center;
+}
+
+img {
+
+  border-radius: 15px;
+  border: 4px solid white;
+}
+
+video {
+
+  border-radius: 15px;
+  border: 4px solid white;
+}
+
+h1 {
+  color: white;
+  font-size: 6em;
+  font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+  grid-column:  2 / span 4;
+  margin-bottom: 0em;
+}
+
+h2 {
+  margin-top: 60px;
+  color: white;
+  font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 60px;
+  color: white;
+  font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+  text-align: center;
+}
+
+h4 {
+
+    font-size: 1em;
+}
+
+p {
+  color: white;
+
+}
+
+p a {
+  color: white;
+  font-family: "Arial Black", sans-serif;
+
+}
+
+p a:hover {
+  color: grey;
+
+}
+
+li a {
+  /* border: 1px solid red; */
+  color: white;
+  font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+li a:hover {
+  /* border: 1px solid red; */
+  color: lightgrey;
+  font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+nav {
+  grid-column: span 12;
+  margin-top: 0px;
+  margin-bottom: 24px;
+  width: 1124px;
+}
+
+nav ul {
+  grid-template-columns: repeat(12,1fr);
+  list-style-type: none;
+  width: auto;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  display: inline-grid;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline-block;
+  width: 93px;
+}
+
+footer {
+  grid-column: 2 / 12;
+  margin-top: 72px;
+}
